@@ -14,6 +14,8 @@
 		03BBE5F51F14BA1000DCA734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BBE5F31F14BA1000DCA734 /* LaunchScreen.storyboard */; };
 		03BBE60B1F14BF1B00DCA734 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBE6091F14BF1B00DCA734 /* Font.swift */; };
 		03BBE60C1F14BF1B00DCA734 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBE60A1F14BF1B00DCA734 /* API.swift */; };
+		03BBE6111F14C32500DCA734 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBE6101F14C32500DCA734 /* Theme.swift */; };
+		03BBE6131F14CA0800DCA734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBE6121F14CA0800DCA734 /* Color.swift */; };
 		F0DF717CECB2D1F0EB33B7E2 /* Pods_TemplateSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D01129CDB7B2D273D9DCF0 /* Pods_TemplateSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		03BBE5F61F14BA1000DCA734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BBE6091F14BF1B00DCA734 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		03BBE60A1F14BF1B00DCA734 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		03BBE6101F14C32500DCA734 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		03BBE6121F14CA0800DCA734 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		65D01129CDB7B2D273D9DCF0 /* Pods_TemplateSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A62AE367E1E9A4F8F1490B1 /* Pods-TemplateSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateSwift/Pods-TemplateSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DBC64AEF4E4BEF9CBC10D997 /* Pods-TemplateSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateSwift/Pods-TemplateSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +69,7 @@
 		03BBE5E91F14BA1000DCA734 /* TemplateSwift */ = {
 			isa = PBXGroup;
 			children = (
-				03BBE6091F14BF1B00DCA734 /* Font.swift */,
-				03BBE60A1F14BF1B00DCA734 /* API.swift */,
+				03BBE60D1F14C2A500DCA734 /* Utility */,
 				03BBE6011F14BA6E00DCA734 /* Models */,
 				03BBE6001F14BA6800DCA734 /* Views */,
 				03BBE5FD1F14BA3500DCA734 /* Controllers */,
@@ -89,7 +92,8 @@
 		03BBE5FD1F14BA3500DCA734 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				03BBE5EC1F14BA1000DCA734 /* ViewController.swift */,
+				03BBE60F1F14C2FE00DCA734 /* View */,
+				03BBE60E1F14C2C000DCA734 /* Worlflow */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +119,32 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		03BBE60D1F14C2A500DCA734 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				03BBE6091F14BF1B00DCA734 /* Font.swift */,
+				03BBE6101F14C32500DCA734 /* Theme.swift */,
+				03BBE6121F14CA0800DCA734 /* Color.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		03BBE60E1F14C2C000DCA734 /* Worlflow */ = {
+			isa = PBXGroup;
+			children = (
+				03BBE60A1F14BF1B00DCA734 /* API.swift */,
+			);
+			name = Worlflow;
+			sourceTree = "<group>";
+		};
+		03BBE60F1F14C2FE00DCA734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BBE5EC1F14BA1000DCA734 /* ViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		B11764AA80DFEBF67A6E8485 /* Pods */ = {
@@ -260,8 +290,10 @@
 			files = (
 				03BBE5ED1F14BA1000DCA734 /* ViewController.swift in Sources */,
 				03BBE5EB1F14BA1000DCA734 /* AppDelegate.swift in Sources */,
+				03BBE6111F14C32500DCA734 /* Theme.swift in Sources */,
 				03BBE60C1F14BF1B00DCA734 /* API.swift in Sources */,
 				03BBE60B1F14BF1B00DCA734 /* Font.swift in Sources */,
+				03BBE6131F14CA0800DCA734 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

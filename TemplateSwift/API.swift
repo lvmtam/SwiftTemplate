@@ -14,6 +14,7 @@ enum HTTPMethod: String {
     case GET  = "GET"
     case POST = "POST"
     case UPDATE = "UPDATE"
+    case DELETE = "DELETE"
 }
 
 protocol Router: URLRequestConvertible {
